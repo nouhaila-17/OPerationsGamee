@@ -42,7 +42,7 @@ class GameScreen : AppCompatActivity() {
         level.text = "Level: ${currentOp.getLevel()}"
 
         var currentScore = 0
-        val maxScore = 2
+        val maxScore = intent.getIntExtra("maxScore",0)
 
         submitButton.setOnClickListener {
             val userAnswer = answer.text.toString().toIntOrNull()
@@ -67,6 +67,7 @@ class GameScreen : AppCompatActivity() {
                     val intent = Intent(this@GameScreen, FinalScreen::class.java)
                     intent.putExtra("finalScore", currentScore)
                     startActivity(intent)
+                    finish()
                 }
                 answer.text.clear()
             }
