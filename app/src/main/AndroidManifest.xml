@@ -13,6 +13,9 @@
         android:theme="@style/Theme.OperationsGame"
         tools:targetApi="31">
         <activity
+            android:name=".FinalScreen"
+            android:exported="false" />
+        <activity
             android:name=".GameScreen"
             android:exported="false" />
         <activity

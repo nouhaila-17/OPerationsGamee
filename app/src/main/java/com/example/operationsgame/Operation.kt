@@ -2,7 +2,11 @@ package com.example.operationsgame
 
 import kotlin.random.Random
 
+
 interface Operation {
+    abstract var num2: Int
+    abstract var num1: Int
+
     fun result(): Int
     fun getOperationTemplate(): String
     fun getLevel(): Level

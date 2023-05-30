@@ -48,11 +48,12 @@
         </TextView>
 
         <EditText
+            android:id="@+id/answer"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
             android:hint="answer"
-            android:inputType="number" />
+            android:inputType="numberSigned" />
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -60,7 +61,7 @@
     </LinearLayout>
 
     <Button
-        android:onClick="submitAnswer"
+        android:id="@+id/submitAnswer"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="submit Answer" />
