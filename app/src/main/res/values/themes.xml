@@ -2,8 +2,13 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.OperationsGame" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorPrimary">@color/my_color_primary</item>
+        <item name="colorAccent">@color/my_color_accent</item>
+
     </style>
 
     <style name="Theme.OperationsGame" parent="Base.Theme.OperationsGame" />
+
+    <color name="my_color_primary">#673AB7</color>
+    <color name="my_color_accent">#9C27B0</color>
 </resources>
